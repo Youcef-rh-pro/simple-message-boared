@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <button ><a href="/new">add message</a></button>
+    <section>
+
+    
+    <% messages.forEach(message=>{ %>
+      
+            
+          <%- include('messages/message',{message:message}) %>
+          
+        
+   <% }) %>
+</section>
+
+</body>
+</html>
